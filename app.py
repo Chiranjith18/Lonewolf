@@ -25,13 +25,13 @@ st.markdown(
 )
 st.markdown("<hr>", unsafe_allow_html=True)
 
-# Resources/Links section
+# Project Resources with explicit ownership
 st.markdown(
     """
     <div style="background-color:#e3f2fd;padding:1rem;border-radius:8px;">
-      <b>🔗 Project Resources:</b><br>
-      💻 <a href="https://colab.research.google.com/drive/1doBHSL_tcRLhVpY4rpxTO8gkjMD96LR9?usp=sharing" target="_blank" style="color:#1565C0;text-decoration:underline;">Colab Model Notebook (Zero-Shot Classification)</a><br>
-      🛠️ <a href="https://github.com/Chiranjith18/reviewscraper.git" target="_blank" style="color:#1565C0;text-decoration:underline;">Review Scraper (Selenium, Java) Repository</a>
+      <b>🔗 Project Resources (developed by Chiranjith):</b><br>
+      💻 <a href="https://colab.research.google.com/drive/1doBHSL_tcRLhVpY4rpxTO8gkjMD96LR9?usp=sharing" target="_blank" style="color:#1565C0;text-decoration:underline;">Colab Model Notebook (Zero-Shot Classification, Our Work)</a><br>
+      🛠️ <a href="https://github.com/Chiranjith18/reviewscraper.git" target="_blank" style="color:#1565C0;text-decoration:underline;">Review Scraper (Selenium, Java, Our Repo)</a>
     </div>
     """,
     unsafe_allow_html=True
@@ -48,7 +48,7 @@ city_df = df[df['City'] == selected_city].copy().sort_values('Risk_Rank')
 # Restaurant count badge
 st.markdown(f"<span style='font-size:18px;color:#1976D2;'>Found <b>{len(city_df)}</b> restaurants in <b>{selected_city}</b></span>", unsafe_allow_html=True)
 
-# Enhanced feature: Risk distribution pie chart
+# Risk distribution pie chart
 risk_counts = city_df['Category'].value_counts().reset_index()
 risk_counts.columns = ['Category', 'Count']
 fig = px.pie(
@@ -65,7 +65,7 @@ fig = px.pie(
 )
 st.plotly_chart(fig, use_container_width=True)
 
-# Enhanced feature: Top 3 high-risk restaurants
+# Top 3 high-risk restaurants
 high_risk = city_df[city_df['Category'] == 'High Risk'].head(3)
 if not high_risk.empty:
     st.warning("🚨 **Top 3 High Risk Restaurants:**")
@@ -92,8 +92,8 @@ st.dataframe(
 with st.expander("About SafeBite (click to expand)"):
     st.write("""
     - 🚦 Predicts restaurant safety risk from Google reviews
-    - Uses Zero-Shot NLP model (Colab)
-    - Java Selenium-powered review scraping
+    - Uses Zero-Shot NLP model (Colab, our custom implementation)
+    - Java Selenium-powered review scraping (our repo)
     - Data-driven 'High', 'Medium', 'Low' categorization
     - Clean, interactive Streamlit dashboard for presentation
     """)
