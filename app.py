@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Use your exact Windows file path here
-csv_path = "restaurant_final_risk_classification.csv"
+csv_path = "restaurant_final_risk_classification(5).csv"
 
 
 # Load merged restaurant classification data
