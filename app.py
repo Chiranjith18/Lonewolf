@@ -30,8 +30,8 @@ st.markdown(
     """
     <div style="background-color:#e3f2fd;padding:1rem;border-radius:8px;">
       <b>🔗 Project Resources (developed by Chiranjith):</b><br>
-      💻 <a href="https://colab.research.google.com/drive/1doBHSL_tcRLhVpY4rpxTO8gkjMD96LR9?usp=sharing" target="_blank" style="color:#1565C0;text-decoration:underline;">Colab Model Notebook (Zero-Shot Classification, Our Work)</a><br>
-      🛠️ <a href="https://github.com/Chiranjith18/reviewscraper.git" target="_blank" style="color:#1565C0;text-decoration:underline;">Review Scraper (Selenium, Java, Our Repo)</a>
+      💻 <a href="https://colab.research.google.com/drive/1doBHSL_tcRLhVpY4rpxTO8gkjMD96LR9?usp=sharing" target="_blank" style="color:#1565C0;text-decoration:underline;">Colab Model Notebook (Zero-Shot Classification, Chiranjith's Work)</a><br>
+      🛠️ <a href="https://github.com/Chiranjith18/reviewscraper.git" target="_blank" style="color:#1565C0;text-decoration:underline;">Review Scraper (Selenium, Java, Chiranjith's Repo)</a>
     </div>
     """,
     unsafe_allow_html=True
