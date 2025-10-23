@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 
 # Use your exact Windows file path here
-csv_path = r"C:\Users\chira\Downloads\restaurant_final_risk_classification (5).csv"
+csv_path = "restaurant_final_risk_classification.csv"
+
 
 # Load merged restaurant classification data
 df = pd.read_csv(csv_path)
